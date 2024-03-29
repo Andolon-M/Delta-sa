@@ -9,7 +9,7 @@
         <article class="relative overflow-hidden rounded-b-lg carrusel">
             <div id="capa-transparente" class="absolute top-0 z-30 w-full h-full fondo__carrusel"></div>
             <!-- Texto -->
-            <div class="absolute  inset-0 flex flex-wrap gap-2 justify-end items-end m-16 mb-24 z-40 text-start text-xl md:text-3xl lg:text-5xl  texto-con-sombra">
+            <div class="absolute  inset-0 flex flex-wrap gap-2 justify-end items-end m-16 mb-28 z-40 text-start text-xl md:text-3xl lg:text-5xl  texto-con-sombra">
                 <p class=" titulo__banner max-w-screen-2xl">
                     Fotos reales de <span class="titulo__banner-dos">Nuestros Proyectos</span>
                 </p>
