@@ -9,15 +9,10 @@
         <article class="relative overflow-hidden rounded-b-lg carrusel">
             <div id="capa-transparente" class="absolute top-0 z-30 w-full h-full fondo__carrusel"></div>
             <!-- Texto -->
-            <div class="absolute  inset-0 flex flex-wrap gap-2 justify-end items-end m-16 z-40 text-start text-xl md:text-3xl lg:text-5xl  texto-con-sombra">
+            <div class="absolute  inset-0 flex flex-wrap gap-2 justify-end items-end m-16 mb-24 z-40 text-start text-xl md:text-3xl lg:text-5xl  texto-con-sombra">
                 <p class=" titulo__banner max-w-screen-2xl">
-                    Fotos reales de
+                    Fotos reales de <span class="titulo__banner-dos">Nuestros Proyectos</span>
                 </p>
-                <div class="flex flex-wrap max-w-screen-2xl">
-                    <p class="titulo__banner">Nuestros</p>
-
-                    <p class="titulo__banner-dos max-w-screen-2xl">&nbsp;Proyectos</p>
-                </div>
             </div>
             <div class="absolute hidden inset-0 flex flex-col justify-end items-start m-16 z-40 text-start text-xl md:text-3xl lg:text-5xl  texto-con-sombra">
                 <a href="#" class="text-white bg-cyan-700 hover:bg-cyan-800 text-lg font-bold ml-6 my-4 py-2 px-4 rounded-lg">
