@@ -1,0 +1,20 @@
+{
+  "public/images/formaleta/formaleta-1.webp": {
+    "file": "assets/formaleta-1-nhu12o1H.webp",
+    "src": "public/images/formaleta/formaleta-1.webp"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-jVACHj_O.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/fonts/insignia-lt-std-roman.woff": {
+    "file": "assets/insignia-lt-std-roman-X8nI7cms.woff",
+    "src": "resources/fonts/insignia-lt-std-roman.woff"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-EmHV212s.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
