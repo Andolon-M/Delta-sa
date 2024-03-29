@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background-carrusel: rgba(3, 9, 15, 0.055);
+    --background-nav: rgba(3, 9, 15, 0.897);
+    --background-2-carrusel: rgba(2, 6, 10, 0.76);
+    --color-primary: #0072af;
+    --color-secundary: rgb(0, 13, 20);
+
+    --color-tercero: rgb(0, 153, 255);
+}
+
+@font-face {
+    font-family: 'delta';
+    src: url('../fonts/insignia-lt-std-roman.woff') format('woff');
+}
+
+
+.fuenteDelta {
+    font-family: 'delta';
+}
+
+
+
+.nav {
+    background: var(--background-nav);
+    backdrop-filter: blur(5px);
+}
+
+.carrusel {
+    height: 100vh;
+}
+
+.mision-vision {
+    background: var(--background-2-carrusel);
+}
+
+.fondo__carrusel {
+
+    transition: background 0.3s;
+    background: linear-gradient(var(--background-carrusel), var(--background-carrusel), var(--background-2-carrusel));
+
+}
+
+
+.titulo__banner {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.linea {
+    background: var(--color-tercero);
+}
+
+.titulo__banner-dos {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    color: var(--color-tercero);
+
+}
+
+.titulo__banner-dos,
+.titulo__banner {
+    font-weight: bold
+}
+
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.masonry-item {
+    margin-bottom: 10px;
+    /* Espacio entre las imágenes */
+}
+
+.masonry-image {
+    width: 100%;
+    height: auto;
+}
+
+#Navbar .x-nav-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* Ajustar según sea necesario */
+}
+
+
+.body__welcome {
+    display: grid;
+}
+
+.titulo__ciudad {
+    text-transform: capitalize;
+}
+
+.header-page {
+    height: 72vh;
+}
+
+.tarjeta_proyecto {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 65vh;
+}
+
+.contenido_proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 55%;
+}
+
+.proyecto_descripcion {
+    height: 25vh;
+    overflow-y: scroll;
+
+}
+
+/* Estilos para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilos para la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color de fondo de la pista */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color del pulgar */
+    border-radius: 5px;
+    /* Radio de borde del pulgar */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento al estar activo o al hacer hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Cambiar el color del pulgar al hacer hover */
+}
+
+.formaleta-metalica {
+    background-image: url('../../public/images/formaleta/formaleta-1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+
+}
+
+
+.informacion_formaleta_metalica {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background: var(--background-nav);
+    backdrop-filter: blur(3px);
+    left: 5em;
+    bottom: 5em;
+    color: white;
+    justify-content: center;
+    align-items: end;
+}
+
+.informacion_formaleta_metalica>div {
+    margin-bottom: 1em;
+    width: 90%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo_formaleta {
+    margin: 0px;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    display: flex;
+
+}
+
+.color-primary {
+    color: var(--color-primary);
+    font-weight: bold;
+
+}
+
+@media (width <800px) {
+    .formaleta-metalica {
+        background-image: url('../../public/images/formaleta/formaleta-1.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    .informacion_formaleta_metalica {
+        display: flex;
+        flex-direction: column;
+        /* Cambiamos la dirección del layout a columna para móvil */
+        width: 100vw;
+        /* Cambiamos el ancho para ocupar toda la pantalla */
+        height: auto;
+        /* Altura automática para adaptarse al contenido */
+        background: var(--background-nav);
+        backdrop-filter: blur(2px);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        /* Centramos el contenido verticalmente */
+        padding: 2em;
+        /* Agregamos un poco de espacio interno */
+    }
+
+    .titulo_formaleta {
+        margin: 0px;
+        font-size: 2em;
+        /* Reducimos el tamaño del título para móvil */
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .color-primary {
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+
+    .descripcion_formaleta {
+        text-align: justify;
+        font-size: 0.8em;
+        /* Justificamos el texto para mejorar la legibilidad */
+    }
+
+
+}
