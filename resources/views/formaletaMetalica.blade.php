@@ -54,7 +54,7 @@
 
 </section>
 
-<section class="relative usos_formaleta overflow-hidden rounded-b-lg header-page my-4 hidden">
+<section class="relative  overflow-hidden rounded-b-lg header-page my-4 hidden">
  <div>
     <h1>
         Ventajas

@@ -65,7 +65,7 @@
             <h1 id="m_contruido">0</h1>
             <p>m2 Contruidos</p>
         </div>
-        <div class="tarjeta_vistado_general hidden">
+        <div class="hidden">
             <h1 id="m_cabledo">0</h1>
             <p>metros de cableado</p>
         </div>
