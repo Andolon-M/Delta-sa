@@ -200,6 +200,117 @@
 
 }
 
+.vistaso_general {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta_vistado_general {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta_vistado_general>h1 {
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.tarjeta_vistado_general>p {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+.servicios_fomaleta {
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+
+.servicios_fomaleta li {
+    width: 50%;
+    margin: 0.8em 0em;
+}
+
+.servicios_fomaleta div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    background: none;
+    border-radius: 10px;
+
+}
+
+.servicios_fomaleta img {
+    width: 15%;
+    object-fit: contain;
+    height: 8%;
+}
+
+.boton:hover {
+    transition: all 0.2s ease-in-out;
+    color: var(--color-primary);
+}
+
+
+.usos_formaleta {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-image: url('../../public/images/formaleta/Snapshot.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.usos_formaleta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726); /* Cambia el valor alpha (0.5) según la opacidad deseada */
+}
+
+.informacion_usos_formaleta{
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    background: none;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    left: 5em;
+    bottom: 5em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.informacion_usos_formaleta>div{
+    margin-bottom: 1em;
+    width: 90%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media (width <800px) {
     .formaleta-metalica {
         background-image: url('../../public/images/formaleta/formaleta-1.webp');
@@ -248,5 +359,13 @@
         /* Justificamos el texto para mejorar la legibilidad */
     }
 
-
+    .vistaso_general {
+        flex-direction: column;
+    }
+    .informacion_usos_formaleta{
+        width: 100%;
+    }
+    .usos_formaleta{
+        justify-content: center;
+    }
 }

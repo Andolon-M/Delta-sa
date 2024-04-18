@@ -30,9 +30,48 @@ scrollToTopBtn.addEventListener('click', () => {
   });
 });
 
+const añosExperiencia = document.getElementById('años_experiencia');
+const mContruido = document.getElementById('m_contruido');
+const mCabledo = document.getElementById('m_cabledo');
 
+let currentAñosExperiencia = 0;
+let currentMContruido = 0;
+let currentMCabledo = 0;
 
+const fechaActual = new Date();
+const targetAñosExperiencia = fechaActual.getFullYear()-2000; // Cambiar este valor al número deseado
+const targetMContruido = 300000; // Cambiar este valor al número deseado
+const targetMCabledo = 1000; // Cambiar este valor al número deseado
 
+function animateAñosExperiencia() {
+  if (currentAñosExperiencia < targetAñosExperiencia) {
+    currentAñosExperiencia++;
+    añosExperiencia.textContent = currentAñosExperiencia;
+    setTimeout(animateAñosExperiencia, 10); // Velocidad de la animación (milisegundos)
+  }
+}
+
+function animateMContruido() {
+  const increment = Math.ceil(targetMContruido / 60); // Dividir el número total por el número de fotogramas (60 fotogramas en 1 segundo)
+  currentMContruido += increment;
+  mContruido.textContent = currentMContruido.toLocaleString(); // Formatear el número con comas
+  if (currentMContruido < targetMContruido) {
+    requestAnimationFrame(animateMContruido);
+  }
+}
+
+function animateMCabledo() {
+  const increment = Math.ceil(targetMCabledo / 60); // Dividir el número total por el número de fotogramas (60 fotogramas en 1 segundo)
+  currentMCabledo += increment;
+  mCabledo.textContent = currentMCabledo.toLocaleString(); // Formatear el número con comas
+  if (currentMCabledo < targetMCabledo) {
+    requestAnimationFrame(animateMCabledo);
+  }
+}
+
+animateAñosExperiencia();
+animateMContruido();
+animateMCabledo();
 
 
 
