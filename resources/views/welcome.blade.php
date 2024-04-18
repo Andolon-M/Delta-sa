@@ -54,9 +54,30 @@
     </div>
 </section>
 
+<!--vitaso geeral-->
+<section class="w-full h-60 flex justify-center items-center my-4">
+    <article class="vistaso_general w-full max-w-screen-xl">
+        <div class="tarjeta_vistado_general">
+            <h1 id="años_experiencia">0</h1>
+            <p >Años de experiencia</p>
+        </div>
+        <div class="tarjeta_vistado_general">
+            <h1 id="m_contruido">0</h1>
+            <p>m2 Contruidos</p>
+        </div>
+        <div class="tarjeta_vistado_general hidden">
+            <h1 id="m_cabledo">0</h1>
+            <p>metros de cableado</p>
+        </div>
+    </article>
+
+</section>
+
+
+
 <div class="flex flex-col justify-center items-center ">
     <!-- Nuestra empresa -->
-    <div id="aboutUs" class="grid grid-cols-1 sm:grid-cols-2 gap-8 my-6 p-8 max-w-screen-xl">
+    <div id="aboutUs" class="grid grid-cols-1 sm:grid-cols-2 gap-8 my-4 px-8 max-w-screen-xl">
         <!-- Imagen con aumento de tamaño y recorte -->
         <div class="overflow-hidden">
             <img src="{{asset('images/nuestra_Empresa.png')}}" class="rounded-xl" alt="Nuestra Empresa">
