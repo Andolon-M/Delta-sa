@@ -48,7 +48,7 @@ Civil Project
                                     <td class="px-4 py-2 border">{{ $civilProject->nombre }}</td>
                                     <td class="px-4 py-2 border">{{ $civilProject->descripcion }}</td>
                                     <td class="px-4 py-2 border">{{ $civilProject->mt_cuadrado }}</td>
-                                    <td class="px-4 py-2 border">{{ $civilProject->ciudad }}</td>
+                                    <td class="px-4 py-2 border capitalize">{{ $civilProject->ciudad }}</td>
                                     
                                     <td class="px-4 py-2 border">
                                         <form action="{{ route('civil-projects.destroy', $civilProject->id) }}" method="POST" class="flex space-x-2">

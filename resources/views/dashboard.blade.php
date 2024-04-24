@@ -1,7 +1,7 @@
 <x-app-layout>
-    <x-slot name="header">
+    <x-slot  name="header">
 
-        <div class="flex justify-between">
+        <div class="flex justify-between ">
             <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 Hola! {{Auth::user()->name}}
             </h1>
