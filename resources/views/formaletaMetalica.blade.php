@@ -4,7 +4,7 @@
 <x-nav-link />
 
 <section class="relative formaleta-metalica overflow-hidden rounded-b-lg header-page ">
-    <div class="informacion_formaleta_metalica ">
+    <div class="informacion_formaleta_metalica rounded-3xl">
         <div>
             <div class="titulo_formaleta">
                 <h1 class="">
@@ -67,7 +67,7 @@
 
 <section class="relative usos_formaleta overflow-hidden rounded-b-lg header-page my-4">
 
-    <div class="informacion_usos_formaleta">
+    <div class="informacion_usos_formaleta rounded-3xl">
         <div class="flex items-center">
             <h1 class="titulo_formaleta">
                 Usos y Aplicaciones

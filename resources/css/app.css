@@ -277,21 +277,12 @@
     border-radius: 10px;
 }
 
-.usos_formaleta::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.726); /* Cambia el valor alpha (0.5) según la opacidad deseada */
-}
 
 .informacion_usos_formaleta{
     display: flex;
     width: 50vw;
     height: 70vh;
-    background: none;
+    background: var(--background-nav);
     backdrop-filter: blur(3px);
     border-radius: 20px;
     left: 5em;
